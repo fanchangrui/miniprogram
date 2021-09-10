@@ -1,6 +1,5 @@
 <!--pages/home/home.wxml-->
-<text class='title'>Hello World</text>
-<button size='mini'>按钮</button>
 
-<view>1.知识点1</view>
-<view>哈哈哈哈哈</view>
+<!--pages/home/home.wxml-->
+<!-- 1.小程序的数据绑定: {{}} -> Mustache -->
+<!-- <view wx:for="{{list}}">{{item.title}}</view> -->
