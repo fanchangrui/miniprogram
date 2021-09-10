@@ -1,10 +1,9 @@
-import request from '../../service/network.js'
 
+import {getMultData} from '../../service/home.js'
 Page({
   data:{
-    message:11,
-    list:[],
-    imagepath:''
+    banners:[],
+    recommends:[]
   },
   select(){
     wx.chooseImage({
@@ -16,14 +15,19 @@ Page({
       }
     })
   },
-  onLoad:() =>{
-    request({
-      url:'http://152.136.185.210:7878/api/m5/home/data?type=pop&page=1'
-    }).then(res =>{
-      console.log(res);
-    }).catch(err =>{
-      console.log(err);
+  onLoad:function(options){
+    getMultData().then(res => {
+      // 取出轮播图和推荐的数据
+      const banners = res.data.data.banner.list;
+      const recommends = res.data.data.recommend.list;
+
+      // 将banners和recommends放到data中
+      this.setData({
+        banners,
+        recommends
+      })
     })
+
   },
   show(){
     wx.showModal({

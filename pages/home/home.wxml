@@ -3,3 +3,4 @@
 <!--pages/home/home.wxml-->
 <!-- 1.小程序的数据绑定: {{}} -> Mustache -->
 <!-- <view wx:for="{{list}}">{{item.title}}</view> -->
+<w-swiper list="{{banners}}"></w-swiper>

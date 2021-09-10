@@ -4,15 +4,12 @@
         "pages/cart/cart",
         "pages/profile/profile",
         "pages/category/category",
-        "components/my-cpn/my-cpn"
+        
+        "components/w-swiper/w-swiper"
     ],
     "window": {
         "navigationBarBackgroundColor": "#ff5777",
-        "navigationBarTextStyle": "white",
-        "navigationBarTitleText": "购物街",
-        "backgroundColor": "#ff0000",
-        "enablePullDownRefresh": false,
-        "backgroundTextStyle": "light"
+        "navigationBarTextStyle": "white"
     },
     "tabBar": {
         "selectedColor": "#ff5777",

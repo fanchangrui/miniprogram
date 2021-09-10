@@ -1,6 +1,0 @@
-<!--components/my-cpn/my-cpn.wxml-->
-<view>title</view>
-<slot name="slot1"/>
-<slot name="slot2"/>
-<slot name="slot3"/>
-<view>text</view>

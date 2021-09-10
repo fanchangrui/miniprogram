@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-      "my-cpn":"/components/my-cpn/my-cpn"
-    }
+      "w-swiper":"/components/w-swiper/w-swiper"
+    },
+    "navigationBarTitleText": "购物街"
   }
