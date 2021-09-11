@@ -4,3 +4,14 @@
 <!-- 1.小程序的数据绑定: {{}} -> Mustache -->
 <!-- <view wx:for="{{list}}">{{item.title}}</view> -->
 <w-swiper list="{{banners}}"></w-swiper>
+<w-recommend recommends="{{recommends}}" bind:imageload="handleImageLoad"></w-recommend>
+<w-popular></w-popular>
+<w-tab-control titles="{{titles}}"
+             bind:tabclick="handleTabClick" 
+             class="{{isTabFixed ? 'fixed': ''}} "
+             id="tab-control"></w-tab-control>
+<w-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}"></w-tab-control>
+<w-goods goods="{{goods[currentType].list}}"></w-goods>
+<w-back-top wx:if="{{showBackTop}}"></w-back-top>
+
+
