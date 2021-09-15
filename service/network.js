@@ -8,7 +8,9 @@ export default function(options) {
       url: baseURL + options.url,
       method: options.method || 'get',
       data: options.data || {},
-      success: resolve,
+      success: function(res){
+        resolve(res.data)
+      },
       fail: reject
     })
   })

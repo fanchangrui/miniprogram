@@ -40,8 +40,8 @@ Page({
   _getMultdata() {
     getMultData().then(res => {
       // 取出轮播图和推荐的数据
-      const banners = res.data.data.banner.list;
-      const recommends = res.data.data.recommend.list;
+      const banners = res.data.banner.list;
+      const recommends = res.data.recommend.list;
 
       // 将banners和recommends放到data中
       this.setData({
@@ -58,7 +58,7 @@ Page({
     getGoodsData(type, page).then(res => {
       // console.log(res)
       // 2.1.取出数据
-      const list = res.data.data.list;
+      const list = res.data.list;
 
       // 2.2.将数据设置到对应type的list中
       const oldList = this.data.goods[type].list;
